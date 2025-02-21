@@ -1,0 +1,9 @@
+services:
+  - name: ai-task-manager
+    type: web
+    env: go
+    buildCommand: "go mod tidy"
+    startCommand: "go run main.go"
+    envVars:
+      - key: GO_VERSION
+        value: 1.24.0
